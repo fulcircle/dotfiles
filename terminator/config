@@ -1,0 +1,31 @@
+[global_config]
+  borderless = True
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  focus = mouse
+  tab_position = hidden
+[keybindings]
+  page_down = Page_Down
+  page_up = Page_Up
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#4c4c4c"
+    background_darkness = 0.75
+    background_type = transparent
+    copy_on_selection = True
+    cursor_color = "#aaaaaa"
+    foreground_color = "#d4d4d4"
+    palette = "#202d1b:#b44c37:#6fc854:#cab752:#5998a3:#926696:#66939c:#9cb6b7:#698971:#c16663:#a9cc94:#ded556:#a6c1d1:#ad7fa8:#8aa7b5:#e4e4e4"
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_theme_colors = True
+    visible_bell = True
