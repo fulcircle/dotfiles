@@ -7,7 +7,7 @@ elif [ $2 == "title" ]; then
 fi
 
 if [ "${#windows[@]}" -eq "0" ]; then
-	i3-msg "exec $1"
+	i3-msg "exec --no-startup-id $1"
 	sleep 0.5
 	i3-msg "[$2=$3] move scratchpad"
 fi

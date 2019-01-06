@@ -33,6 +33,7 @@ floating_modifier $mod
 # Restore our previous wallpaper
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id compton -b
+exec --no-startup-id dunst
 
 set $terminal_scratch "bash ~/.i3/scratchpad_show.sh 'terminator -l KJ -T terminator-floaty' 'title' 'terminator-floaty' 'floating enable'"
 bindsym $mod+Return exec --no-startup-id $terminal_scratch
@@ -40,16 +41,16 @@ bindsym $mod+Return exec --no-startup-id $terminal_scratch
 set $spotify_scratch "bash ~/.i3/scratchpad_show.sh 'spotify' 'class' 'Spotify' 'floating enable'"
 bindsym $mod+m exec --no-startup-id $spotify_scratch
 
-bindsym $mod+i exec playerctl next
-bindsym $mod+u exec playerctl previous
-bindsym $mod+n exec playerctl play-pause
+bindsym $mod+i exec --no-startup-id playerctl next
+bindsym $mod+u exec --no-startup-id playerctl previous
+bindsym $mod+n exec --no-startup-id playerctl play-pause
 
 bindsym $mod+p exec pcmanfm 
 
-bindsym --whole-window $mod+button2 exec $spotify_scratch
+bindsym --whole-window $mod+button2 exec --no-startup-id $spotify_scratch
 
 # start a terminal
-bindsym $mod+Shift+Return exec terminal
+bindsym $mod+Shift+Return exec --no-startup-id terminal
 
 # kill focused window
 bindsym $mod+q kill
@@ -86,7 +87,6 @@ bindsym $mod+Shift+F3 exec gksu pcmanfm
 bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
-bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
