@@ -1,0 +1,9 @@
+*
+!*/
+!fish/**
+!terminator/**
+!.i3/**
+!compton.conf
+!.Xresources
+!.gitignore
+
