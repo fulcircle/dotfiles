@@ -5,6 +5,7 @@
 !.i3/**
 !rofi/**
 !flashfocus/**
+!dunst/**
 !compton.conf
 !.Xresources
 !.gitignore

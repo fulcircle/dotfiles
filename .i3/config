@@ -31,13 +31,14 @@ floating_modifier $mod
 # for_window [title="Spotify"] floating enable, move scratchpad, scratchpad show;
 
 # Restore our previous wallpaper
-exec --no-startup-id sleep 3; nitrogen --restore; compton -b
+exec --no-startup-id nitrogen --restore
+exec --no-startup-id compton -b
 
 set $terminal_scratch "bash ~/.i3/scratchpad_show.sh 'terminator -l KJ -T terminator-floaty' 'title' 'terminator-floaty' 'floating enable'"
-bindsym $mod+Return exec $terminal_scratch
+bindsym $mod+Return exec --no-startup-id $terminal_scratch
 
 set $spotify_scratch "bash ~/.i3/scratchpad_show.sh 'spotify' 'class' 'Spotify' 'floating enable'"
-bindsym $mod+m exec $spotify_scratch
+bindsym $mod+m exec --no-startup-id $spotify_scratch
 
 bindsym $mod+i exec playerctl next
 bindsym $mod+u exec playerctl previous
