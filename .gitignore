@@ -3,6 +3,7 @@
 !fish/**
 !terminator/**
 !.i3/**
+!rofi/**
 !compton.conf
 !.Xresources
 !.gitignore
