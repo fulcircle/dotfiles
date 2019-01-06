@@ -30,6 +30,9 @@ floating_modifier $mod
 # for_window [title="terminator-floaty"] floating enable, move scratchpad, scratchpad show;
 # for_window [title="Spotify"] floating enable, move scratchpad, scratchpad show;
 
+# Restore our previous wallpaper
+exec --no-startup-id sleep 3; nitrogen --restore; compton -b
+
 set $terminal_scratch "bash ~/.i3/scratchpad_show.sh 'terminator -l KJ -T terminator-floaty' 'title' 'terminator-floaty' 'floating enable'"
 bindsym $mod+Return exec $terminal_scratch
 
@@ -305,9 +308,8 @@ exec --no-startup-id clipit
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
+exec_always --no-startup-id flashfocus
 
-# Restore our previous wallpaper
-exec --no-startup-id sleep 3; nitrogen --restore; compton -b
 
 # Rescuetime
 exec --no-startup-id rescuetime

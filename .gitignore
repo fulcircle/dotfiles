@@ -4,6 +4,7 @@
 !terminator/**
 !.i3/**
 !rofi/**
+!flashfocus/**
 !compton.conf
 !.Xresources
 !.gitignore
