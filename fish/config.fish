@@ -7,6 +7,8 @@ alias grh="git reset --hard"
 alias ll="env LC_COLLATE=C ls -alh --color=auto"
 alias l="ll"
 alias v="nvim"
+alias vim="nvim"
+alias vi="nvim"
 alias cdd="cd .."
 alias au="ps aux"
 
