@@ -12,40 +12,36 @@ Xft.hintstyle:  hintfull
 Xft.lcdfilter:  lcddefault
 Xft.rgba:       rgb
 
-URxvt*font:         xft:Noto Sans Mono:pixelsize=16
-URxvt*boldFont:     xft:Noto Sans Mono:bold:pixelsize=16
-URxvt*xftAntialias: true
+URxvt.font:         xft:Noto Sans Mono:pixelsize=16
+URxvt.boldFont:     xft:Noto Sans Mono:bold:pixelsize=16
+URxvt.xftAntialias: true
 
-xterm*font:         xft:Noto Sans Mono:pixelsize=16
-xterm*boldFont:     xft:Noto Sans Mono:bold:pixelsize=16
-xterm*xftAntialias: true
+URxvt.termName:          rxvt-unicode
+URxvt.imLocale:          en_US.UTF-8
+URxvt.saveLines:         1058575
+URxvt.internalBorder:    0
 
-URxvt*termName:          rxvt-256color
-URxvt*imLocale:          en_US.UTF-8
-URxvt*saveLines:         1058575
-URxvt*internalBorder:    0
+URxvt.perl-ext-common:  default,matcher
+URxvt.urlLauncher:      /usr/bin/google-chrome-stable
+URxvt.matcher.button:   1
+URxvt.matcher.pattern.0: \\b((?:[a-z][-\\w]+:(?:\\/{1,3}|[a-z0-9%])|www\\d{0,3}[.]|[-a-z0-9.]+[.][a-z]{2,4}\\/)(?:[^\\s()<>]+|\\(([^\\s()<>]+|(\\([^\\s()<>]+\\)))*\\))+(?:\\(([^\\s()<>]+|(\\([^\\s()<>]+\\)))*\\)|[^\\s`!()\\[\\]{};:\047\042.,<>?«»“”‘’]))
 
-URxvt*perl-ext-common:  default,matcher
-URxvt*urlLauncher:      /usr/bin/google-chrome-stable
-URxvt*matcher.button:   1
-URxvt*matcher.pattern.0: \\b((?:[a-z][-\\w]+:(?:\\/{1,3}|[a-z0-9%])|www\\d{0,3}[.]|[-a-z0-9.]+[.][a-z]{2,4}\\/)(?:[^\\s()<>]+|\\(([^\\s()<>]+|(\\([^\\s()<>]+\\)))*\\))+(?:\\(([^\\s()<>]+|(\\([^\\s()<>]+\\)))*\\)|[^\\s`!()\\[\\]{};:\047\042.,<>?«»“”‘’]))
-
-URxvt*scrollBar: false
-URxvt*jumpScroll:true
-URxvt*skipScroll:true
+URxvt.scrollBar: false
+URxvt.jumpScroll: true
+URxvt.skipScroll: true
 
 ! do not scroll with output
-URxvt*scrollTtyOutput: false
+URxvt.scrollTtyOutput: false
 
 ! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
-URxvt*scrollWithBuffer: true
+URxvt.scrollWithBuffer: true
 
 ! scroll back to the bottom on keypress
-URxvt*scrollTtyKeypress: true
+URxvt.scrollTtyKeypress: true
 
-urxvt*depth: 32
-urxvt*background:  [75]#000000
-urxvt*foreground:  #d6d0f6
+URxvt.depth: 32
+URxvt.background:  [65]#000000
+URxvt.foreground:  #d6d0f6
 *color0:  #000000
 *color1:  #d1165d
 *color2:  #2a677c

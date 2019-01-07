@@ -26,16 +26,15 @@ font xft:Noto Sans 10
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
 
-# exec --no-startup-id spotify
-# for_window [title="terminator-floaty"] floating enable, move scratchpad, scratchpad show;
-# for_window [title="Spotify"] floating enable, move scratchpad, scratchpad show;
-
 # Restore our previous wallpaper
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id compton -b
 exec --no-startup-id dunst
 
-set $terminal_scratch "bash ~/.i3/scratchpad_show.sh 'urxvt -name \'urxvt-floaty\'' 'class' 'urxvt-floaty' 'floating enable'"
+# start a terminal
+bindsym $mod+Shift+Return exec --no-startup-id urxvt
+
+set $terminal_scratch "bash ~/.i3/scratchpad_show.sh 'urxvt -name urxvt_scratchpad' 'instance' 'urxvt_scratchpad' 'floating enable'"
 bindsym $mod+Return exec --no-startup-id $terminal_scratch
 
 set $spotify_scratch "bash ~/.i3/scratchpad_show.sh 'spotify' 'class' 'Spotify' 'floating enable'"
@@ -48,9 +47,6 @@ bindsym $mod+n exec --no-startup-id playerctl play-pause
 bindsym $mod+p exec pcmanfm 
 
 bindsym --whole-window $mod+button2 exec --no-startup-id $spotify_scratch
-
-# start a terminal
-bindsym $mod+Shift+Return exec --no-startup-id terminal
 
 # kill focused window
 bindsym $mod+q kill

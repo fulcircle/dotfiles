@@ -2,6 +2,8 @@
 
 if [ $2 == "class" ]; then
 	windows=( $(xdotool search --classname "$3") )
+elif [ $2 == "instance" ]; then
+	windows=( $(xdotool search --classname "$3") )
 elif [ $2 == "title" ]; then
 	windows=( $(xdotool search --name "$3") )
 fi
