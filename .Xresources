@@ -43,8 +43,9 @@ URxvt*scrollWithBuffer: true
 ! scroll back to the bottom on keypress
 URxvt*scrollTtyKeypress: true
 
-*background:  #000000
-*foreground:  #d6d0f6
+urxvt*depth: 32
+urxvt*background:  [75]#000000
+urxvt*foreground:  #d6d0f6
 *color0:  #000000
 *color1:  #d1165d
 *color2:  #2a677c

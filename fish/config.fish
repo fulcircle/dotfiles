@@ -6,14 +6,13 @@ alias gc="git commit -m $1"
 alias grh="git reset --hard"
 alias ll="env LC_COLLATE=C ls -alh --color=auto"
 alias l="ll"
-alias v="vim"
+alias v="nvim"
 alias cdd="cd .."
 alias au="ps aux"
 
 set PATH $HOME/ide/webstorm/bin/ $PATH
-set EDITOR vim
-set TERM terminator
-set TERMINAL terminator
+set EDITOR nvim
+set TERM rxvt-unicode
 
 function fish_mode_prompt
 if test "$fish_key_bindings" = "fish_vi_key_bindings"

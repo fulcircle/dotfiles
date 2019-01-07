@@ -35,7 +35,7 @@ exec --no-startup-id nitrogen --restore
 exec --no-startup-id compton -b
 exec --no-startup-id dunst
 
-set $terminal_scratch "bash ~/.i3/scratchpad_show.sh 'terminator -l KJ -T terminator-floaty' 'title' 'terminator-floaty' 'floating enable'"
+set $terminal_scratch "bash ~/.i3/scratchpad_show.sh 'urxvt -name \'urxvt-floaty\'' 'class' 'urxvt-floaty' 'floating enable'"
 bindsym $mod+Return exec --no-startup-id $terminal_scratch
 
 set $spotify_scratch "bash ~/.i3/scratchpad_show.sh 'spotify' 'class' 'Spotify' 'floating enable'"
