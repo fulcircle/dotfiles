@@ -13,7 +13,7 @@ configuration {
 }
 
 * {
-	accent: #88DDFF;
+    accent: rgba(214, 208, 246, 100 %);
     foreground:         		@accent;
     background:         		rgba(0, 0, 0, 0.5);
     transparent:			rgba(0, 0, 0, 0);
