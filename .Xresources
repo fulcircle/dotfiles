@@ -12,8 +12,8 @@ Xft.hintstyle:  hintfull
 Xft.lcdfilter:  lcddefault
 Xft.rgba:       rgb
 
-URxvt.font:         xft:Source Code Pro:pixelsize=17:style=Regular:antialiasing=true,hinting=slight
-URxvt.boldFont:         xft:Source Code Pro:pixelsize=17:style=Bold:antialiasing=true,hinting=slight
+URxvt.font:         xft:Source Code Pro:pixelsize=17:style=Regular:antialiasing=true,hinting=slight,xft:Symbola
+URxvt.boldFont:         xft:Source Code Pro:pixelsize=17:style=Bold:antialiasing=true,hinting=slight,xft:Symbola
 URxvt.xftAntialias: true
 
 URxvt.termName:          rxvt-unicode
