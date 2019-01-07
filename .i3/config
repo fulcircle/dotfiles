@@ -28,8 +28,10 @@ floating_modifier $mod
 
 # Restore our previous wallpaper
 exec --no-startup-id nitrogen --restore
+
 exec --no-startup-id compton -b
 exec --no-startup-id dunst
+exec --no-startup-id imwheel
 
 # start a terminal
 bindsym $mod+Shift+Return exec --no-startup-id urxvt
