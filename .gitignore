@@ -5,7 +5,8 @@
 !rofi/**
 !flashfocus/**
 !dunst/**
-!oomox/colors/synthwave_drive
+!oomox/colors/synthwave_dark_bg
+!oomox/colors/synthwave_light_bg
 !compton.conf
 !.Xresources
 !.gitignore
