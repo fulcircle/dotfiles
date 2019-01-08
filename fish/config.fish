@@ -13,7 +13,7 @@ alias cdd="cd .."
 alias au="ps aux"
 alias cdh="cd ~"
 
-set PATH $HOME/ide/webstorm/bin/ $PATH
+set PATH $HOME/ide/webstorm/bin/ $HOME/ide/pycharm/bin $PATH
 set EDITOR nvim
 set TERM rxvt-unicode
 
