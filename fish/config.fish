@@ -11,6 +11,7 @@ alias vim="nvim"
 alias vi="nvim"
 alias cdd="cd .."
 alias au="ps aux"
+alias cdh="cd ~"
 
 set PATH $HOME/ide/webstorm/bin/ $PATH
 set EDITOR nvim
