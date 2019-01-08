@@ -7,6 +7,7 @@
 !dunst/**
 !oomox/colors/synthwave_dark_bg
 !oomox/colors/synthwave_light_bg
+!/nvim/**
 !compton.conf
 !.Xresources
 !.gitignore
