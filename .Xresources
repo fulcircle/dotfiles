@@ -4,7 +4,7 @@
 ! For comments use !
 
 
-Xft.dpi:        110
+Xft.dpi:        100
 Xft.antialias:  true
 Xft.autohint:   false
 Xft.hinting:    true

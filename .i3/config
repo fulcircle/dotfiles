@@ -52,7 +52,7 @@ assign [class=Google-chrome] workspace 1
 bindsym $mod+p [class=jetbrains-pycharm] focus
 bindsym $mod+w [class=jetbrains-webstorm] focus
 bindsym $mod+Return [class=Google-chrome] focus
-bindsym $mod+t [class=URxvt] workspace 10
+bindsym $mod+c workspace 10
 
 bindsym --whole-window $mod+button2 exec --no-startup-id $spotify_scratch
 
