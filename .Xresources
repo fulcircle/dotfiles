@@ -12,8 +12,8 @@ Xft.hintstyle:  hintfull
 Xft.lcdfilter:  lcddefault
 Xft.rgba:       rgb
 
-URxvt.font:         xft:Source Code Pro:pixelsize=14:style=Regular:antialiasing=true,hinting=slight,xft:DejaVu Sans:pixelsize:14:style=Regular:antialiasing:true,hinting:slight
-URxvt.boldFont:         xft:Source Code Pro:pixelsize=14:style=Bold:antialiasing=true,hinting=slight,xft:DejaVu Sans:pixelsize:14:style=Bold:antialiasing:true,hinting:slight
+URxvt.font:         xft:Source Code Pro:pixelsize=15:style=Regular:antialiasing=true,hinting=slight,xft:DejaVu Sans:pixelsize:15:style=Regular:antialiasing:true,hinting:slight
+URxvt.boldFont:         xft:Source Code Pro:pixelsize=15:style=Bold:antialiasing=true,hinting=slight,xft:DejaVu Sans:pixelsize:15:style=Bold:antialiasing:true,hinting:slight
 URxvt.xftAntialias: true
 URxvt.letterSpace: 1
 
@@ -41,7 +41,7 @@ URxvt.scrollWithBuffer: true
 URxvt.scrollTtyKeypress: true
 
 URxvt.depth: 32
-URxvt.background:  [65]#000000
+URxvt.background:  [70]#000000
 URxvt.foreground:  #d6d0f6
 *color0:  #000000
 *color1:  #d1165d
