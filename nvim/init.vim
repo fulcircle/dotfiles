@@ -1,2 +1,2 @@
-nnoremap <S-U> <PageUp>
-nnoremap <S-D> <PageDown>
+nnoremap <S-U> <C-u>
+nnoremap <S-D> <C-d>

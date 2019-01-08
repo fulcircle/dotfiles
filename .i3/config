@@ -46,6 +46,8 @@ bindsym $mod+i exec --no-startup-id playerctl next
 bindsym $mod+u exec --no-startup-id playerctl previous
 bindsym $mod+n exec --no-startup-id playerctl play-pause
 
+assign [class=jetbrains-webstorm] workspace 8
+assign [class=jetbrains-pycharm] workspace 9
 bindsym $mod+p [class=jetbrains-pycharm] focus
 bindsym $mod+w [class=jetbrains-webstorm] focus
 bindsym $mod+c [class=Google-chrome] focus
