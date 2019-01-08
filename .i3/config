@@ -248,7 +248,6 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Set shut down, restart and locking features
-bindsym $mod+Mod1+l exec --no-startup-id betterlockscreen --lock dim
 
 #bindsym $mod+0 mode "$mode_system"
 #set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
@@ -290,9 +289,6 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-# Lock screen
-bindsym $mod+9 exec --no-startup-id blurlock
-
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # exec --no-startup-id manjaro-hello
@@ -304,11 +300,14 @@ exec --no-startup-id clipit
 # exec_always --no-startup-id sbxkb
 # exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
-exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id flashfocus
 
+# Lock screen
+set $lock_command "betterlockscreen --lock dim"
+exec --no-startup-id xautolock -time 10 -locker $lock_command
+bindsym $mod+Mod1+l exec --no-startup-id $lock_command
 
 # Rescuetime
 exec --no-startup-id rescuetime
