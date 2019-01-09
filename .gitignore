@@ -5,9 +5,8 @@
 !rofi/**
 !flashfocus/**
 !dunst/**
-!oomox/colors/synthwave_dark_bg
-!oomox/colors/synthwave_light_bg
 !/nvim/**
+!wal/**
 !compton.conf
 !.Xresources
 !.gitignore

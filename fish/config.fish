@@ -17,6 +17,9 @@ set PATH $HOME/ide/webstorm/bin/ $HOME/ide/pycharm/bin $PATH
 set EDITOR nvim
 set TERM rxvt-unicode
 
+# Pywal theming
+cat ~/.cache/wal/sequences &
+
 function fish_mode_prompt
 if test "$fish_key_bindings" = "fish_vi_key_bindings"
         or test "$fish_key_bindings" = "fish_hybrid_key_bindings"

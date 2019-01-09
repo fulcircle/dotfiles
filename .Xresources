@@ -12,8 +12,8 @@ Xft.hintstyle:  hintfull
 Xft.lcdfilter:  lcddefault
 Xft.rgba:       rgb
 
-URxvt.font:         xft:Source Code Pro:pixelsize=15:style=Regular:antialiasing=true,hinting=slight,xft:DejaVu Sans:pixelsize:15:style=Regular:antialiasing:true,hinting:slight
-URxvt.boldFont:         xft:Source Code Pro:pixelsize=15:style=Bold:antialiasing=true,hinting=slight,xft:DejaVu Sans:pixelsize:15:style=Bold:antialiasing:true,hinting:slight
+URxvt.font:         xft:Source Code Pro:pixelsize=13:style=Regular:antialiasing=true,hinting=slight,xft:DejaVu Sans:pixelsize:13:style=Regular:antialiasing:true,hinting:slight
+URxvt.boldFont:         xft:Source Code Pro:pixelsize=13:style=Bold:antialiasing=true,hinting=slight,xft:DejaVu Sans:pixelsize:13:style=Bold:antialiasing:true,hinting:slight
 URxvt.xftAntialias: true
 URxvt.letterSpace: 1
 

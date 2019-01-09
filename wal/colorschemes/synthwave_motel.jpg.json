@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/vik/.config/wpg/wallpapers/synthwave_motel.jpg",
+    "alpha": "75",
+
+    "special": {
+        "background": "#362e33",
+        "foreground": "#c4e5f3",
+        "cursor": "#c4e5f3"
+    },
+    "colors": {
+        "color0": "#362e33",
+        "color1": "#BD3EE7",
+        "color2": "#9A68F8",
+        "color3": "#6599EE",
+        "color4": "#908DFE",
+        "color5": "#AF9AFD",
+        "color6": "#D4AAFE",
+        "color7": "#c4e5f3",
+        "color8": "#89a0aa",
+        "color9": "#BD3EE7",
+        "color10": "#9A68F8",
+        "color11": "#6599EE",
+        "color12": "#908DFE",
+        "color13": "#AF9AFD",
+        "color14": "#D4AAFE",
+        "color15": "#c4e5f3"
+    }
+}
