@@ -47,12 +47,12 @@ bindsym $mod+i exec --no-startup-id playerctl next
 bindsym $mod+u exec --no-startup-id playerctl previous
 bindsym $mod+n exec --no-startup-id playerctl play-pause
 
+assign [class=Vivaldi-stable] workspace 1
 assign [class=jetbrains-webstorm] workspace 8
 assign [class=jetbrains-pycharm] workspace 9
-assign [class=Google-chrome] workspace 1
-bindsym $mod+p [class=jetbrains-pycharm] focus
-bindsym $mod+w [class=jetbrains-webstorm] focus
-bindsym $mod+Return [class=Google-chrome] focus
+bindsym $mod+Return workspace 1
+bindsym $mod+w workspace 8
+bindsym $mod+p workspace 9
 bindsym $mod+c workspace 10
 
 bindsym --whole-window $mod+button2 exec --no-startup-id $spotify_scratch
