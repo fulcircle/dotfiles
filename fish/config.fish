@@ -15,7 +15,7 @@ alias cdh="cd ~"
 
 set PATH $HOME/ide/webstorm/bin/ $HOME/ide/pycharm/bin $PATH
 set EDITOR nvim
-set TERM rxvt-unicode
+set TERM termite
 
 # Pywal theming
 cat ~/.cache/wal/sequences &
