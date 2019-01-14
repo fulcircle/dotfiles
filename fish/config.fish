@@ -10,6 +10,7 @@ alias v="nvim"
 alias vim="nvim"
 alias vi="nvim"
 alias ..="cd .."
+alias ...="cd ../.."
 alias au="ps aux"
 alias h="cd ~"
 
