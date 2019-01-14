@@ -31,7 +31,6 @@ exec --no-startup-id nitrogen --restore
 
 exec --no-startup-id compton -b
 exec --no-startup-id dunst
-exec --no-startup-id imwheel
 exec --no-startup-id wal -R
 
 # start a terminal
