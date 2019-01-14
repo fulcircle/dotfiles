@@ -9,9 +9,9 @@ alias l="ll"
 alias v="nvim"
 alias vim="nvim"
 alias vi="nvim"
-alias cdd="cd .."
+alias ..="cd .."
 alias au="ps aux"
-alias cdh="cd ~"
+alias h="cd ~"
 
 set PATH $HOME/ide/webstorm/bin/ $HOME/ide/pycharm/bin $PATH
 set EDITOR nvim
