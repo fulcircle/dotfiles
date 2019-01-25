@@ -4,6 +4,7 @@ alias gp="git pull"
 alias gpo="git push origin HEAD"
 alias gc="git commit -m $1"
 alias grh="git reset --hard"
+alias gac="git add .; git commit -m $1"
 alias ll="env LC_COLLATE=C ls -alh --color=auto"
 alias l="ll"
 alias v="nvim"
@@ -14,7 +15,7 @@ alias ...="cd ../.."
 alias au="ps aux"
 alias h="cd ~"
 
-set PATH $HOME/ide/webstorm/bin/ $HOME/ide/pycharm/bin $PATH
+set PATH $PATH
 set EDITOR nvim
 set TERM termite
 
