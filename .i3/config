@@ -39,7 +39,7 @@ bindsym $mod+Shift+Return exec --no-startup-id termite
 set $terminal_scratch "bash ~/.i3/scratchpad_show.sh 'termite --name termite_scratchpad' 'instance' 'termite_scratchpad' 'floating enable'"
 bindsym $mod+Return exec --no-startup-id $terminal_scratch
 
-set $spotify_scratch "bash ~/.i3/scratchpad_show.sh 'spotify' 'class' 'Spotify' 'floating enable'"
+set $spotify_scratch "bash ~/.i3/scratchpad_show.sh 'spotify --force-device-scale-factor=1.4' 'class' 'Spotify' 'floating enable'"
 bindsym $mod+m exec --no-startup-id $spotify_scratch
 
 bindsym $mod+i exec --no-startup-id playerctl next
