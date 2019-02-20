@@ -5,10 +5,12 @@
 !rofi/**
 !flashfocus/**
 !dunst/**
-!/nvim/**
+!nvim/init.vim
 !wal/**
+!termite/**
 !compton.conf
 !.Xresources
 !.gitignore
 !.imwheelrc
 *private.fish
+*.netrwhist
