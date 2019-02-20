@@ -11,4 +11,4 @@
 !.Xresources
 !.gitignore
 !.imwheelrc
-private.fish
+*private.fish
