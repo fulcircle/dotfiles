@@ -5,10 +5,10 @@
 
 
 # Normal DPI
-# Xft.dpi:	100
+Xft.dpi:	100
 
 # HiDPI
-Xft.dpi:	140
+#Xft.dpi:	140
 
 Xft.antialias:  true
 Xft.autohint:   false
