@@ -4,7 +4,12 @@
 ! For comments use !
 
 
-Xft.dpi:        140
+# Normal DPI
+# Xft.dpi:	100
+
+# HiDPI
+Xft.dpi:	140
+
 Xft.antialias:  true
 Xft.autohint:   false
 Xft.hinting:    true

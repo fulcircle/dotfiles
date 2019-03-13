@@ -9,7 +9,7 @@
 !wal/**
 !termite/**
 !compton.conf
-!.Xresources
+!.Xresources.*
 !.gitignore
 !.imwheelrc
 *private.fish
