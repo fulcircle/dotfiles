@@ -334,10 +334,7 @@ set_from_resource $color14    color14
 set_from_resource $color15    color15
 
 bar {
-<<<<<<< HEAD
-=======
 	position top
->>>>>>> master
 	colors {
 		background $background
 	}
