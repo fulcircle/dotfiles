@@ -337,10 +337,6 @@ set_from_resource $color15    color15
 
 bar {
 	position top
-	colors {
-		background $background
-	}
-
 }
 
 # Theme colors
