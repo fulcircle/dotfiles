@@ -15,6 +15,7 @@ alias ...="cd ../.."
 alias au="ps aux"
 alias h="cd ~"
 alias automall="source ~/.config/fish/automall.private.fish"
+alias energywatch="source ~/.config/fish/energywatch.private.fish"
 
 set PATH $PATH
 set EDITOR nvim

@@ -42,16 +42,18 @@ bindsym $mod+Return exec --no-startup-id $terminal_scratch
 set $spotify_scratch "bash ~/.i3/scratchpad_show.sh 'spotify --force-device-scale-factor=1.4' 'class' 'Spotify' 'floating enable'"
 bindsym $mod+m exec --no-startup-id $spotify_scratch
 
-bindsym $mod+i exec --no-startup-id playerctl next
-bindsym $mod+u exec --no-startup-id playerctl previous
+bindsym $mod+period exec --no-startup-id playerctl next
+bindsym $mod+comma exec --no-startup-id playerctl previous
 bindsym $mod+n exec --no-startup-id playerctl play-pause
 
 assign [class=Vivaldi-stable] workspace 1
-assign [class=Slack] workspace 7
+assign [class=Slack] workspace 6
+assign [class=jetbrains-idea] workspace 7
 assign [class=jetbrains-webstorm] workspace 8
 assign [class=jetbrains-pycharm] workspace 9
 bindsym $mod+space workspace 1
-bindsym $mod+s workspace 7
+bindsym $mod+s workspace 6
+bindsym $mod+i workspace 7
 bindsym $mod+w workspace 8
 bindsym $mod+p workspace 9
 bindsym $mod+c workspace 10
@@ -154,8 +156,8 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 #navigate workspaces next / previous
-bindsym $mod+period workspace next
-bindsym $mod+comma workspace prev
+# bindsym $mod+period workspace next
+# bindsym $mod+comma workspace prev
 
 # Workspace names
 # to display names or symbols instead of plain workspace numbers you can use
