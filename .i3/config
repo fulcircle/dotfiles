@@ -46,7 +46,7 @@ bindsym $mod+period exec --no-startup-id playerctl next
 bindsym $mod+comma exec --no-startup-id playerctl previous
 bindsym $mod+n exec --no-startup-id playerctl play-pause
 
-assign [class=Vivaldi-stable] workspace 1
+assign [class=Google-chrome] workspace 1
 assign [class=Slack] workspace 6
 assign [class=jetbrains-idea] workspace 7
 assign [class=jetbrains-webstorm] workspace 8
