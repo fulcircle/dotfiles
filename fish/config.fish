@@ -18,6 +18,9 @@ alias automall="source ~/.config/fish/automall.private.fish"
 alias energywatch="source ~/.config/fish/energywatch.private.fish"
 alias wineaccess="source ~/.config/fish/wineaccess.private.fish"
 
+# set SSH_AUTH_SOCK for ssh agent
+set SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/ssh-agent.socket"
+
 set PATH $PATH
 set EDITOR nvim
 set TERM termite
