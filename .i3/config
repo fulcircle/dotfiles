@@ -55,7 +55,7 @@ bindsym $mod+space workspace 1
 bindsym $mod+s workspace 6
 bindsym $mod+i workspace 7
 bindsym $mod+w workspace 8
-bindsym $mod+p workspace 9
+bindsym $mod+x workspace 9
 bindsym $mod+c workspace 10
 
 bindsym --whole-window $mod+button2 exec --no-startup-id $spotify_scratch
@@ -300,6 +300,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
+exec --no-startup-id caffeine
 # exec --no-startup-id blueman
 # exec_always --no-startup-id sbxkb
 # exec --no-startup-id start_conky_maia
