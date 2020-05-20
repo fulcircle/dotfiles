@@ -12,5 +12,7 @@
 !.Xresources.*
 !.gitignore
 !.imwheelrc
+!i3status/**
 *private.fish
 *.netrwhist
+discord/

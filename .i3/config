@@ -29,7 +29,7 @@ floating_modifier $mod
 # Restore our previous wallpaper
 exec --no-startup-id nitrogen --restore
 
-exec --no-startup-id compton -b
+exec --no-startup-id picom -b
 exec --no-startup-id dunst
 exec --no-startup-id wal -R
 
@@ -46,7 +46,7 @@ bindsym $mod+period exec --no-startup-id playerctl next
 bindsym $mod+comma exec --no-startup-id playerctl previous
 bindsym $mod+n exec --no-startup-id playerctl play-pause
 
-assign [class=Vivaldi-stable] workspace 1
+assign [class=Google-chrome] workspace 1
 assign [class=Slack] workspace 6
 assign [class=jetbrains-idea] workspace 7
 assign [class=jetbrains-webstorm] workspace 8
@@ -55,8 +55,8 @@ bindsym $mod+space workspace 1
 bindsym $mod+s workspace 6
 bindsym $mod+i workspace 7
 bindsym $mod+w workspace 8
-bindsym $mod+p workspace 9
-bindsym $mod+c workspace 10
+bindsym $mod+c workspace 9
+bindsym $mod+x workspace 10
 
 bindsym --whole-window $mod+button2 exec --no-startup-id $spotify_scratch
 
@@ -71,8 +71,7 @@ bindsym $mod+d exec rofi -show run
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
 
-#exec --no-startup-id volumeicon
-#bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
+#exec --no-startup-id volumeicon bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 #exec --no-startup-id pulseaudio
 #exec --no-startup-id pa-applet
 bindsym $mod+Ctrl+m exec pavucontrol
@@ -295,15 +294,10 @@ mode "resize" {
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-# exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
-exec --no-startup-id clipit
-# exec --no-startup-id blueman
-# exec_always --no-startup-id sbxkb
-# exec --no-startup-id start_conky_maia
-# exec --no-startup-id start_conky_green
+exec --no-startup-id caffeine
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id flashfocus
@@ -337,6 +331,9 @@ set_from_resource $color15    color15
 
 bar {
 	position top
+	status_command i3status
+	output primary
+	separator_symbol "⁞"
 }
 
 # Theme colors
@@ -402,3 +399,4 @@ mode "$mode_gaps_outer" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+

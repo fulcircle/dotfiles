@@ -5,6 +5,7 @@ alias gpo="git push origin HEAD"
 alias gc="git commit -m $1"
 alias grh="git reset --hard"
 alias gac="git add .; git commit -m $1"
+alias gb="git branch --sort=-committerdate"
 alias ll="env LC_COLLATE=C ls -alh --color=auto"
 alias l="ll"
 alias v="nvim"
@@ -17,6 +18,9 @@ alias h="cd ~"
 alias automall="source ~/.config/fish/automall.private.fish"
 alias energywatch="source ~/.config/fish/energywatch.private.fish"
 alias wineaccess="source ~/.config/fish/wineaccess.private.fish"
+
+# set SSH_AUTH_SOCK for ssh agent
+set SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 set PATH $PATH
 set EDITOR nvim
