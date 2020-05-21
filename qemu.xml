@@ -103,6 +103,11 @@
       <target chassis="6" port="0xd"/>
       <address type="pci" domain="0x0000" bus="0x00" slot="0x01" function="0x5"/>
     </controller>
+    <controller type="pci" index="7" model="pcie-root-port">
+      <model name="pcie-root-port"/>
+      <target chassis="7" port="0xe"/>
+      <address type="pci" domain="0x0000" bus="0x00" slot="0x01" function="0x6"/>
+    </controller>
     <interface type="network">
       <mac address="52:54:00:8d:23:1a"/>
       <source network="default"/>
@@ -111,6 +116,12 @@
     </interface>
     <input type="tablet" bus="usb">
       <address type="usb" bus="0" port="3"/>
+    </input>
+    <input type="mouse" bus="virtio">
+      <address type="pci" domain="0x0000" bus="0x06" slot="0x00" function="0x0"/>
+    </input>
+    <input type="keyboard" bus="virtio">
+      <address type="pci" domain="0x0000" bus="0x07" slot="0x00" function="0x0"/>
     </input>
     <input type="mouse" bus="ps2"/>
     <input type="keyboard" bus="ps2"/>
@@ -131,3 +142,4 @@
     <qemu:arg value="input-linux,id=mouse1,evdev=/dev/input/by-id/usb-Razer_Razer_DeathAdder_Chroma-event-mouse"/>
   </qemu:commandline>
 </domain>
+
