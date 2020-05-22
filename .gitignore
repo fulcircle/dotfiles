@@ -13,6 +13,7 @@
 !.gitignore
 !.imwheelrc
 !i3status/**
+!qemu.xml
 *private.fish
 *.netrwhist
 discord/
