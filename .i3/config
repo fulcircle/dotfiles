@@ -29,6 +29,7 @@ floating_modifier $mod
 # Restore our previous wallpaper
 exec --no-startup-id nitrogen --restore
 
+# Window transparency using picom
 exec --no-startup-id picom -b
 exec --no-startup-id dunst
 exec --no-startup-id wal -R
@@ -48,6 +49,8 @@ bindsym $mod+m exec --no-startup-id $spotify_scratch
 bindsym $mod+period exec --no-startup-id playerctl next
 bindsym $mod+comma exec --no-startup-id playerctl previous
 bindsym $mod+n exec --no-startup-id playerctl play-pause
+
+bindsym $mod+g exec --no-startup-id "sh ~/.i3/i3gw.sh invisible"
 
 assign [class=Google-chrome] workspace 1
 assign [class=Slack] workspace 6
