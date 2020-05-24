@@ -1,5 +1,6 @@
 # i3 config file (v4)
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
+#
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
@@ -31,8 +32,12 @@ exec --no-startup-id nitrogen --restore
 
 # Window transparency using picom
 exec --no-startup-id picom -b
+
 exec --no-startup-id dunst
 exec --no-startup-id wal -R
+exec --no-startup-id dropbox
+
+exec --no-startup-id sh ~/.config/scripts/animated-wallpaper.sh "/home/vik/Dropbox/wallpaper/purple_lines.mkv"
 
 # Scream client - listens on virtual machine network for sound events from scream server running on Windows
 exec --no-startup-id scream -u -p 4011 -i virbr0
