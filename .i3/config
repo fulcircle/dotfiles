@@ -45,6 +45,8 @@ exec --no-startup-id sh ~/.config/scripts/animated-wallpaper.sh "/home/vik/Dropb
 # Scream client - listens on virtual machine network for sound events from scream server running on Windows
 exec --no-startup-id scream -u -p 4011 -i virbr0
 
+exec --no-startup-id xrandr --output DP-4 --primary
+
 # start a terminal
 bindsym $mod+Shift+Return exec --no-startup-id termite
 
@@ -318,7 +320,9 @@ exec_always --no-startup-id flashfocus
 
 # Lock screen
 set $lock_command "betterlockscreen --lock dim"
-exec --no-startup-id xautolock -time 10 -locker $lock_command
+#exec --no-startup-id xautolock -time 10 -locker $lock_command
+exec --no-startup-id xautolock -time 5 -locker $lock_command -notify 20 -notifier 'xset dpms force off'
+exec --no-startup-id xautolock -time 7 -locker "systemctl suspend"
 bindsym $mod+Mod1+l exec --no-startup-id $lock_command
 
 # Rescuetime
