@@ -27,6 +27,9 @@ font xft:Noto Sans 10
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
 
+# Map caps lock to escape
+exec --no-startup-id setxkbmap -option 'caps:escape'
+
 # Restore our previous wallpaper
 exec --no-startup-id nitrogen --restore
 
@@ -37,15 +40,12 @@ exec --no-startup-id dunst
 exec --no-startup-id wal -R
 exec --no-startup-id dropbox
 
-# Map caps lock to escape
-exec --no-startup-id setxkbmap -option 'caps:escape'
-
 exec --no-startup-id sh ~/.config/scripts/animated-wallpaper.sh "/home/vik/Dropbox/wallpaper/purple_lines.mkv"
 
 # Scream client - listens on virtual machine network for sound events from scream server running on Windows
 exec --no-startup-id scream -u -p 4011 -i virbr0
 
-exec --no-startup-id xrandr --output DP-4 --primary
+exec --no-startup-id xrandr --output DP-0 --primary
 
 # start a terminal
 bindsym $mod+Shift+Return exec --no-startup-id termite
