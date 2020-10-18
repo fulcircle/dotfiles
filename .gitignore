@@ -8,7 +8,7 @@
 !nvim/init.vim
 !wal/**
 !termite/**
-!compton.conf
+!picom.conf
 !.Xresources.*
 !.gitignore
 !.imwheelrc
