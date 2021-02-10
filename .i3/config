@@ -104,7 +104,7 @@ bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness 
 
 # Start Applications
 bindsym $mod+Shift+p exec gksu pcmanfm
-bindsym Print exec --no-startup-id deepin-screen-recorder
+bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # focus_follows_mouse no
