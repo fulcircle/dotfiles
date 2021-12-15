@@ -48,10 +48,10 @@ exec --no-startup-id sh ~/.config/scripts/animated-wallpaper.sh "/home/vik/Dropb
 # exec --no-startup-id xrandr --output DP-0 --primary
 
 # start a terminal
-bindsym $mod+Shift+Return exec --no-startup-id termite
+bindsym $mod+Shift+Return exec --no-startup-id kitty
 
-set $terminal_scratch "bash ~/.i3/scratchpad_show.sh 'termite --name termite_scratchpad' 'instance' 'termite_scratchpad' 'floating enable'"
-bindsym $mod+Return exec --no-startup-id $terminal_scratch
+set $kitty_scratch "bash ~/.i3/scratchpad_show.sh 'kitty --name kitty_scratchpad' 'instance' 'kitty_scratchpad' 'floating enable'"
+bindsym $mod+Return exec --no-startup-id $kitty_scratch
 
 set $spotify_scratch "bash ~/.i3/scratchpad_show.sh 'spotify' 'class' 'Spotify' 'floating enable'"
 bindsym $mod+m exec --no-startup-id $spotify_scratch
