@@ -17,6 +17,7 @@ alias au="ps aux"
 alias h="cd ~"
 alias wineaccess="source ~/.config/fish/private/wineaccess.private.fish"
 alias ets="source ~/.config/fish/private/ets.private.fish"
+alias coasters="source ~/.config/fish/private/coasters-shopify.private.fish"
 alias push_private_fish="cd ~/.config/fish/private/; git push origin; cd -"
 alias push_config="cd ~/.config/; git push origin; cd -"
 

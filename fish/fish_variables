@@ -1,11 +1,15 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export AWS_ACCESS_KEY_ID:ASIA23R73QFJESRKOKEK
+SETUVAR --export AWS_SECRET_ACCESS_KEY:FmE\x2beAHZqyp1JJgMFusSbVFs/j7H8YPOfwQYEcY5
+SETUVAR --export AWS_SESSION_TOKEN:IQoJb3JpZ2luX2VjEFIaCXVzLWVhc3QtMSJIMEYCIQDSJBIpc05VSptmDI4jx5gE0K5\x2befvxXFfGXxYKdFHYBQIhAKKyO8mIQ70kBVEBkj0DwPGb0IMCSzxdz1DFFBRhoSVdKvgBCKv//////////wEQABoMNzQ2Mzg0NDkwODM0Igyu36DYFHom61SQ0QQqzAF73k8qH8kc5foO0BJWEUP79cdBPP62m1ptvUgHfjf5HTdxeawnQO7v3EIBJgaQ5tTHN0wscyVwzzAL4VmAlKlf1ya34bhOlnzXHcnBSupJzB0NHvT8BoMUtKRp\x2bBCGkmtwXM8NPGX7yzoS46UPuUBTzyIKbbx0VtH5oMu9U9gY0yd20nQogVSIJPEFotv9ZpLUr9\x2bKDJFjAE10BxxsIm0FfDf4ziMipwbhxuCIQFal7cUMg8TZI/Nd03W61taPVyxDWhmuxqDt/\x2bgYxMYw/KHkkAY6lwGFQdiawVtuJzQ4JWIUu91QaJe6ErDPLhugGKUMaRXXZP2/sc7DLNKTVtEf9vssAmt11EpGYfvvwHS0DsewMXdnd1CqL/Tp6oaVufdShIkyarYSVQVPV9bt7qASAsyB59db0gVdqwJIGwqNx8F3EOrQtWvjvZLBjz9OSX0\x2bZ/FXDTzlPR05jxRRj08iaTI1yS1zspdoIp7f
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_initialized:3100
+SETUVAR _fisher_edc_2F_bass_files:/home/vik/\x2econfig/fish/functions/__bass\x2epy\x1e/home/vik/\x2econfig/fish/functions/bass\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:/home/vik/\x2econfig/fish/functions/fisher\x2efish\x1e/home/vik/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:/home/vik/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e/home/vik/\x2econfig/fish/functions/_nvm_list\x2efish\x1e/home/vik/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e/home/vik/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e/home/vik/\x2econfig/fish/functions/nvm\x2efish\x1e/home/vik/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e/home/vik/\x2econfig/fish/completions/nvm\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejorgebucaran/nvm\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/nvm\x2efish\x1ejorgebucaran/fisher\x1eedc/bass
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:\x2d\x2dbold
