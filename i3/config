@@ -50,17 +50,17 @@ exec --no-startup-id sh ~/.config/scripts/animated-wallpaper.sh "/home/vik/Dropb
 # start a terminal
 bindsym $mod+Shift+Return exec --no-startup-id kitty
 
-set $kitty_scratch "bash ~/.i3/scratchpad_show.sh 'kitty --name kitty_scratchpad' 'instance' 'kitty_scratchpad' 'floating enable'"
+set $kitty_scratch "bash ~/.config/i3/scratchpad_show.sh 'kitty --name kitty_scratchpad' 'instance' 'kitty_scratchpad' 'floating enable'"
 bindsym $mod+Return exec --no-startup-id $kitty_scratch
 
-set $spotify_scratch "bash ~/.i3/scratchpad_show.sh 'spotify' 'class' 'Spotify' 'floating enable'"
+set $spotify_scratch "bash ~.config/i3/scratchpad_show.sh 'spotify' 'class' 'Spotify' 'floating enable'"
 bindsym $mod+m exec --no-startup-id $spotify_scratch
 
 bindsym $mod+period exec --no-startup-id playerctl next
 bindsym $mod+comma exec --no-startup-id playerctl previous
 bindsym $mod+n exec --no-startup-id playerctl play-pause
 
-bindsym $mod+g exec --no-startup-id "sh ~/.i3/i3gw.sh invisible"
+bindsym $mod+g exec --no-startup-id "sh ~/.config/i3/i3gw.sh invisible"
 
 assign [class=Google-chrome] workspace 1
 assign [class=Slack] workspace 6
