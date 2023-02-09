@@ -15,6 +15,9 @@ new_float normal
 # Hide borders
 hide_edge_borders none
 
+default_border pixel 1
+default_floating_border pixel 1
+
 # change borders
 # bindsym $mod+u border none
 # bindsym $mod+y border pixel 1
@@ -42,6 +45,8 @@ exec --no-startup-id dropbox
 
 exec --no-startup-id sh ~/.config/scripts/animated-wallpaper.sh "/home/vik/Dropbox/wallpaper/purple_lines.mkv"
 
+exec --no-startup-id vmware-user
+
 # Scream client - listens on virtual machine network for sound events from scream server running on Windows
 # exec --no-startup-id scream -u -p 4011 -i virbr0
 
@@ -67,12 +72,15 @@ assign [class=Slack] workspace 6
 assign [class=jetbrains-idea] workspace 7
 assign [class=jetbrains-webstorm] workspace 8
 assign [class=jetbrains-pycharm] workspace 9
+assign [class="microsoft teams - preview"] workspace 6
 bindsym $mod+space workspace 1
 bindsym $mod+s workspace 6
 bindsym $mod+i workspace 7
 bindsym $mod+w workspace 8
 bindsym $mod+c workspace 9
 bindsym $mod+x workspace 10
+
+bindsym $mod+Shift+parenleft move workspace 9
 
 bindsym --whole-window $mod+button2 exec --no-startup-id $spotify_scratch
 
